@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: 'poppins';
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333333ab;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4CAF50;
+}
+
+.navbar .logout-btn {
+    background-color: #f0eaea1d;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .logout-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('coffee-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 
+        2px 2px 0px black,  /* Bayangan kanan bawah */
+        -2px 2px 0px black, /* Bayangan kiri bawah */
+        2px -2px 0px black, /* Bayangan kanan atas */
+        -2px -2px 0px black; /* Bayangan kiri atas */
+    text-align: up;
+    padding: 100px 20px;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    color: rgb(242, 180, 8);
+    margin-bottom: 10px;
+    font-family: "poppins"; 
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: "calibri";
+    font-style: italic; 
+    text-align: center;
+}
+
+/* Product Section */
+.product-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color:   #a52a2a1e;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f9f4f4;
+    font-family: 'Merriweather';
+    font-size: 40px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.product-card {
+    background-color: #ffffff48;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lora';
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    color: #ffd900;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #fffdfd;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333333a0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content p {
+    margin: 0;
+    font-size:15px;
+}

@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'poppins';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Menghilangkan scrollbar jika video lebih besar dari layar */
+}
+
+/* Background Video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan video mengisi seluruh layar */
+    z-index: -1; /* Menempatkan video di bawah konten */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.7); /* Semi transparan */
+    color: rgb(242, 180, 8);
+    padding: 20px 0;
+    position: relative;
+    z-index: 100; /* Navbar berada di atas video */
+    text-align: center;
+    font-size: 10px;
+}
+
+.navbar .logo h2 {
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* About Us Section */
+.aboutus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+    z-index: 10; /* Pastikan konten berada di atas video */
+    flex-grow: 1; /* Membuat konten ini tumbuh dan memberi ruang untuk footer */
+}
+
+/* Styling untuk teks About Us */
+.about-text {
+    color: rgb(250, 249, 246);
+    background-color: rgba(0, 0, 0, 0.127); /* Semi-transparan agar teks lebih mudah dibaca */
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-text b {
+    color: #FFD700; /* Warna gold untuk teks yang ditekankan */
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* ensures full width */
+    background-color: #33333388; /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Add padding to increase distance from content */
+    margin: 0;
+}
+
+/* Footer text */
+footer p {
+    margin: 0;
+}
+
+

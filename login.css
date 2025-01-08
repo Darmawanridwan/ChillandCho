@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Video background */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Login Form Container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.161);  /* Mengubah menjadi transparan */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.61);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Heading of Login Form */
+.login-container h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  /* Space between form elements */
+}
+
+/* Input Style */
+form label {
+    text-align: left;
+    font-size: 16px;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%; /* Ensures input takes full width of the container */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box; /* Includes padding in the width */
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #4CAF50; /* Green border when focused */
+    outline: none;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+/* Ensure username and password boxes have the same height and look identical */
+form input[type="text"],
+form input[type="password"] {
+    height: 50px;  /* Set a fixed height for both input fields */
+    font-size: 16px; /* Ensure font size is the same */
+    border-radius: 4px; /* Same border radius for both inputs */
+}
+
+/* Submit Button */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #316e34;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 30px;
+        width: 90%;
+    }
+}
+
+
+
+

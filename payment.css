@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: 'poppins';
+    background-color: #f4f4f4;
+    background-image: url('');
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Memastikan body mengisi seluruh tinggi layar */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.56);
+    color: white;
+    padding: 5px 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(242, 180, 8);
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4CAF50;
+}
+
+.navbar .logout-btn {
+    background-color: #f0eaea1d;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .logout-btn:hover {
+    background-color: #f2efef;
+}
+
+/* Payment form container */
+.payment-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.096);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.61);
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.payment-form .form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.payment-form .form-group input,
+.payment-form .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.payment-form .form-group input:focus,
+.payment-form .form-group select:focus {
+    border-color: #f4a261;
+    outline: none;
+}
+
+.payment-form .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-form .pay-btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form .pay-btn:hover {
+    background-color: #264653;
+}
+
+.payment-form .form-group input::placeholder,
+.payment-form .form-group select {
+    color: #aaa;
+}
+
+/* Footer styling */
+footer {
+    background-color: #33333388;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+

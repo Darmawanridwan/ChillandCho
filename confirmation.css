@@ -1,0 +1,247 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('https://i.pinimg.com/736x/7f/ac/f4/7facf431f9b903450cdea6982202f351.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .logo h2 {
+    color: rgb(242, 180, 8);
+    font-size: 40px;
+    font-family: "poppins";
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'poppins';
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* Payment Confirmation Section Styling */
+.payment-confirmation {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* White transparent background with 50% opacity */
+    border-radius: 10px;
+    width: 90%;  /* Set the width to be smaller */
+    max-width: 500px;  /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Add some shadow for better visibility */
+}
+
+
+/* Payment Form Styling */
+.payment-form {
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.payment-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Column Layout for Form Fields */
+.payment-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Column for Label */
+.payment-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 30%;  /* Column for label */
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Column for Input */
+.payment-form input, .payment-form select {
+    width: 65%;  /* Column for input */
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.payment-form input[readonly] {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.payment-form button.pay-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f8c210;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.payment-form button.pay-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Payment Confirmation Section Styling */
+.payment-confirmation {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White transparent background */
+    border-radius: 10px;
+    width: 90%;  /* Set the width to be smaller */
+    max-width: 500px;  /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Add some shadow for better visibility */
+}
+
+.payment-confirmation h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Column Layout for Confirmation Details */
+.confirmation-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Column for Confirmation Items */
+.confirmation-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Label for Confirmation Items */
+.confirmation-item label {
+    font-weight: bold;
+    color: #333;
+    width: 35%;  /* Column for label */
+    text-align: left;
+}
+
+/* Text for Confirmation Items */
+.confirmation-item p {
+    font-size: 16px;
+    color: #333;
+    width: 55%;  /* Column for text */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-form {
+        width: 90%;
+    }
+
+    .payment-form .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-form label {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .payment-form input, .payment-form select {
+        width: 100%;
+    }
+
+    .payment-confirmation {
+        width: 90%;
+    }
+
+    .confirmation-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .confirmation-item label {
+        width: 100%;
+    }
+
+    .confirmation-item p {
+        width: 100%;
+    }
+}
+
+
